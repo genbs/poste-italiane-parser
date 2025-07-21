@@ -28,7 +28,7 @@ A Python tool to parse PDF documents from Poste Italiane and convert them into s
 1.  Clone the repository:
 
 ```bash
-git clone [https://github.com/genbs/poste-italiane-parser.git](https://github.com/genbs/poste-italiane-parser.git)
+git clone https://github.com/genbs/poste-italiane-parser.git
 cd poste-italiane-parser
 ```
 
