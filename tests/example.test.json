@@ -1,0 +1,25 @@
+{
+  "path": "tests/xxx.pdf",
+  "currency": "EURO",
+  "generated_at": "xxx",
+  "account_number": "xxxx",
+  "period_start_date": "xxx",
+  "period_end_date": "xxx",
+  "holder": "xxx xxx",
+  "customer_name": "xxx xxx",
+  "customer_street": "xxx",
+  "customer_city": "xxx",
+  "initial_balance": 0,
+  "final_balance": 0,
+  "card_number": "",
+  "iban": "xxxx",
+  "transactions": [
+    {
+      "accounting_date": "xxx",
+      "value_date": "xxx",
+      "description": "xxx",
+      "credits": 0,
+      "debits": 0
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+.venv
+.vscode
+.DS_Store
+*.pdf
+*.json
+!example.test.json
+.csv
+.idea

@@ -1,0 +1,24 @@
+# File: pyproject.toml
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "poste_italiane_parser" 
+version = "0.1.0"
+authors = [
+  { name="Gennaro Bosone", email="gennaro.bs@gmail.com" },
+]
+description = "A Python parser for Poste Italiane financial documents."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/genbs/poste-italiane-parser"
+Issues = "https://github.com/genbs/poste-italiane-parser/issues"
