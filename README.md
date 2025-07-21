@@ -1,6 +1,6 @@
 # Poste Italiane Documents Parser
 
-_a gli sventurati che hanno un conto postale_
+_agli sventurati che hanno un conto postale_
 
 A Python tool to parse PDF documents from Poste Italiane and convert them into structured JSON or CSV data. It automatically identifies the document type and validates financial data to ensure integrity.
 
@@ -47,8 +47,6 @@ You can download the document from [here](https://comunicazionionline.poste.it/t
 
 ### Arguments
 
-### Arguments
-
 - `-p`, `--path` (Required): Path to the PDF file or a directory containing PDF files.
 - `-f`, `--format` (Optional): Output format (`json` or `csv`). Defaults to `json`.
 - `-o`, `--output` (Optional): Path for the output file or directory. By default, output is saved to the same directory as the input.
@@ -64,14 +62,14 @@ python main.py --path "path/to/documents/statement.pdf"
 python main.py --path "path/to/documents/postepay_report.pdf" --format csv --output "output/report_data.csv"
 
 # Extract data from all PDFs in a directory and save to an output folder
-python main.py --path "path/to/documents/" --format json --output "path/to/json_exports/"
+python main.py "path/to/documents/" -o "out/"
 ```
 
 ## Output Format
 
 The result of parsing
 
-```
+```json
   {
     "generated_at": "string | null",
     "document_type": "ESTRATTO_CONTO | LISTA_MOVIMENTI | RENDICONTO",
@@ -110,7 +108,7 @@ The result of parsing
 
 This repository does not include test PDFs to avoid committing sensitive personal data. Instead, tests are designed to run against result files.
 
-To run the test suite, you must first create a [my-test-name].test_result file for each test case. This file is a simple key-value store containing the expected output for a given PDF. At the end of file, you can insert a JSON with the transactions; the tests will check that the rows are present.
+To run the test suite, you must first create a `[my-test-name].test.json` file for each test case. This file is json formatted and should contain the expected output structure. Here is an example of how to structure your test result file:
 
 ```json
 {
@@ -139,6 +137,8 @@ To run the test suite, you must first create a [my-test-name].test_result file f
 	]
 }
 ```
+
+For the transactions, you can include all expected ones or just a subset.
 
 Once your test result files are set up, run the tests with the verbose flag:
 
