@@ -1,7 +1,7 @@
 import re
 
 from poste_italiane_parser.base_parser import BaseParser
-from utils.pdf import parse_text_in_area
+from poste_italiane_parser.utils.pdf import parse_text_in_area
 
 
 class EstrattoContoParser(BaseParser):

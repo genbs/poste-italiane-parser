@@ -6,3 +6,5 @@
 !example.test.json
 .csv
 .idea
+dist
+*.egg-info

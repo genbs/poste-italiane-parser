@@ -5,7 +5,7 @@ import os
 import re
 from abc import ABC
 
-from utils.pdf import parse_table, parse_text_in_area
+from poste_italiane_parser.utils.pdf import parse_table, parse_text_in_area
 
 logging.getLogger(__name__)
 

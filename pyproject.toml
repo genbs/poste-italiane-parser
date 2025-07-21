@@ -19,6 +19,10 @@ classifiers = [
     "Operating System :: OS Independent",
 ]
 
+dependencies = [
+  "PyMuPDF==1.24.7"  
+]
+
 [project.urls]
 Homepage = "https://github.com/genbs/poste-italiane-parser"
 Issues = "https://github.com/genbs/poste-italiane-parser/issues"

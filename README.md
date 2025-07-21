@@ -65,6 +65,41 @@ python main.py --path "path/to/documents/postepay_report.pdf" --format csv --out
 python main.py "path/to/documents/" -o "out/"
 ```
 
+---
+
+## Using as a Library
+
+You can also import and use the parser directly in your Python projects.
+
+**Install the package:**
+
+```bash
+pip install poste_italiane_parser
+```
+
+**Use it in your script:**
+
+```python
+from poste_italiane_parser import PosteItalianeParser
+
+file_path = "path/to/your/statement.pdf"
+
+try:
+    data = PosteItalianeParser(file_path)
+    # Print some of the extracted data
+    print(f"Document Type: {data['document_type']}")
+    print(f"Holder: {data['holder']}")
+    print(f"Final Balance: {data['final_balance']}")
+
+except ValueError as e:
+    print(f"Error: {e}")
+except FileNotFoundError:
+    print(f"Error: The file was not found at {file_path}")
+
+```
+
+---
+
 ## Output Format
 
 The result of parsing
