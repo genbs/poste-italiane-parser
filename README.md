@@ -10,8 +10,10 @@ A Python tool to parse PDF documents from Poste Italiane and convert them into s
 
 - **Automatic Document Detection**: Identifies the document type (e.g., BancoPosta statement, Postepay report) from the PDF content.
 - **Data Validation**: Performs validation checks on account statements to ensure balances and totals match the transactional data.
+- **Multi-Page Transaction Parsing**: Accurately handles transaction descriptions that span across multiple pages.
 - **Multiple Output Formats**: Export extracted data to JSON (default) or CSV formats.
 - **Batch Processing**: Analyze a single PDF or an entire directory of documents at once.
+- **Easily Extendable**: The design makes it simple to adapt the parser for future changes in PDF layouts or to support new document types.
 
 ---
 
